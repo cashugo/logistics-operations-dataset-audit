@@ -6,7 +6,7 @@
 
 Kaggle is the usual go-to repository of aspiring and practicing data professionals where they can browse and download datasets to be used to learn and hone their skills. The main problem with many datasets that are accessible is that the data is mostly artificially generated and can be a poor imitation of the data that is being handled in the corporate environment. Although a sample dataset should not be used as an exact basis for the real world data, it should be realistic to be of better help to those who are planning to use said dataset for data analysis. The main problem that aspiring data analysts on Kaggle face are the overly synthetic and sanitized datasets that are not only generic when it comes to insights you can get, some are also unrealistic. 
 
-The title of the dataset from Kaggle that will be used is "Logistics Operations Database" where the author claimed that, 
+The title of the dataset from Kaggle that will be used is "Logistics Operations Database" (https://www.kaggle.com/datasets/yogape/logistics-operations-database) where the author claimed that, 
 
 "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns."
 
