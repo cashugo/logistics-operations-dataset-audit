@@ -20,12 +20,12 @@ The dataset contains several sheets but the project will utilize two (sheets) th
 
 The project is aimed to verify the dataset's author's claim regarding: "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns.", and assess the value it can provide for data analysis. 
 
-<h2>Primary Insights:</h2>
+<h3>Primary Insights:</h3>
  - The dataset contains an even data, the fulfillment performance regardless of the dimensions (columns) used and booking type is generally just about 55% on-time and 45% late which implies a flaw on the operational baseline.
  - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when it reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.
  - Overall, the data is more on the unrealistic side and is falling short on achieving the promise of its author regarding filling the gap about operational complexity.
 
-<h2>Recommendation:</h2>
+<h3>Recommendation:</h3>
  - Use this dataset if the objective is to practice data manipulation with data cleaning as the only exception.
  - Avoid using a dataset like this if the goal is to catch a glimpse of how logistics work in real-world.
  - Approach with caution when using the dataset for building predictive models as the data in synthetic and the resulting model might not be suitable for real-world application.
