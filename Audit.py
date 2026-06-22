@@ -8,8 +8,8 @@ from scipy.stats import chi2_contingency
 pd.set_option("display.max_rows", None)
 pd.set_option("display.max_columns", None)
 
-load = pd.read_csv(r"C:\Users\cshug\OneDrive\Desktop\Data\loads.csv", encoding="latin1")
-delivery = pd.read_csv(r"C:\Users\cshug\OneDrive\Desktop\Data\delivery_events.csv", encoding="latin1")
+load = pd.read_csv(r"[file path]\loads.csv", encoding="latin1")
+delivery = pd.read_csv(r"[file path]\delivery_events.csv", encoding="latin1")
 
 delivery_data = pd.merge(load, delivery, on="load_id", how="inner")
 
