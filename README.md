@@ -22,7 +22,7 @@ The project is aimed to verify the dataset's author's claim regarding: "Most log
 
 <h3>Primary Insights:</h3>
  - The dataset contains an even data, the fulfillment performance regardless of the dimensions (columns) used and booking type is generally just about 55% on-time and 45% late which implies a flaw on the operational baseline.
- - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when it reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.
+ - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when in reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.
  - Overall, the data is more on the unrealistic side and is falling short on achieving the promise of its author regarding filling the gap about operational complexity.
 
 <h3>Recommendation:</h3>
@@ -40,7 +40,7 @@ With the combined sheets from the dataset having 22 columns, it is necessary to 
   <img src="Table_1.png" alt="Baseline Operational Summary Table">
 </div>
 
-Across the three (3) booking types, the fulfillment performance is even with 55% of the shipments are being fulfilled on time while the other 45% is fulfilled late. Based on the total revenue from shipments, Dedicated bookings make the half of the revenue while the other half is almost evenly shared by Contract and Spot, despite this massive share in revenue, no significant difference in terms of fulfillment performance can be observed which is an oddity. A logistics company that earned $525,051,600 from 2022-2024, is almost 50/50 when it comes to fulfilling their shipments on time is a little bit far from being realistic, a 55% on-time fulfillment rate is not acceptable even for Spot bookings, let alone for bookings with pre-existing agreement like Contract and Dedicated, furthermore, the Cost per Shipping across almost booking types are almost the same.
+Across the three (3) booking types, the fulfillment performance is even with 55% of the shipments are fulfilled on time while the other 45% is fulfilled late. Based on the total revenue from shipments, Dedicated bookings make the half of the revenue while the other half is almost evenly shared by Contract and Spot, despite this massive share in revenue, no significant difference in terms of fulfillment performance can be observed which is an oddity. A logistics company that earned $525,051,600 from 2022-2024, is almost 50/50 when it comes to fulfilling their shipments on time is a little bit far from being realistic, a 55% on-time fulfillment rate is not acceptable even for Spot bookings, let alone for bookings with pre-existing agreement like Contract and Dedicated, furthermore, the Cost per Shipping across almost booking types are almost the same.
 
 <h3>Null Values Check</h3>
 
