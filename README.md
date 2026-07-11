@@ -3,7 +3,7 @@
 </div>
 
 <h2>Background</h2>
-
+<p align="justify">
 Kaggle is the usual go-to repository of aspiring and practicing data professionals where they can browse and download datasets to be used to learn and hone their skills. The main problem with many datasets that are accessible is that the data is mostly artificially generated and can be a poor imitation of the data that is being handled in the corporate environment. Although a sample dataset should not be used as an exact basis for the real world data, it should be realistic to be of better help to those who are planning to use said dataset for data analysis. The main problem that aspiring data analysts on Kaggle face are the overly synthetic and sanitized datasets that are not only generic when it comes to insights you can get, some are also unrealistic. 
 
 The title of the dataset from Kaggle that will be used is "Logistics Operations Database" (https://www.kaggle.com/datasets/yogape/logistics-operations-database) where the author claimed that, 
@@ -11,27 +11,28 @@ The title of the dataset from Kaggle that will be used is "Logistics Operations 
 "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns."
 
 The dataset contains several sheets but the project will utilize two (sheets) that contain details regarding the subject company's performance: delivery events and truck load. The project will not focus on the in-depth analysis of the dataset, rather an investigation of the author's claim regarding how the dataset can fill the gap of unrealistic data that is exhibited by most Kaggle datasets.  
-
+</p>
 <h2>Executive Summary</h2>
 
 <div align="center">
   <img src="Figure_1.png" alt="Company's Fulfillment Performance per Booking Type">
 </div>
-
+<p align="justify">
 The project is aimed to verify the dataset's author's claim regarding: "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns.", and assess the value it can provide for data analysis. 
-
+</p>
 <h3>Primary Insights:</h3>
- - The dataset contains an even data, the fulfillment performance regardless of the dimensions (columns) used and booking type is generally just about 55% on-time and 45% late which implies a flaw on the operational baseline.
- - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when in reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.
- - Overall, the data is more on the unrealistic side and is falling short on achieving the promise of its author regarding filling the gap about operational complexity.
+<p align="justify">
+<div> - The dataset contains an even data, the fulfillment performance regardless of the dimensions (columns) used and booking type is generally just about 55% on-time and 45% late which implies a flaw on the operational baseline.</div>
+<div> - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when in reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.</div>
+<div> - Overall, the data is more on the unrealistic side and is falling short on achieving the promise of its author regarding filling the gap about operational complexity.</div>
 
 <h3>Recommendation:</h3>
- - Use this dataset if the objective is to practice data manipulation with data cleaning as the only exception.
- - Avoid using a dataset like this if the goal is to catch a glimpse of how logistics work in real-world.
- - Approach with caution when using the dataset for building predictive models as the data in synthetic and the resulting model might not be suitable for real-world application.
-
+<div> - Use this dataset if the objective is to practice data manipulation with data cleaning as the only exception.</div>
+<div> - Avoid using a dataset like this if the goal is to catch a glimpse of how logistics work in real-world.</div>
+<div> - Approach with caution when using the dataset for building predictive models as the data in synthetic and the resulting model might not be suitable for real-world application.</div>
+</p>
 <h2>Methodology</h2>
-
+<p align="justify">
 With the combined sheets from the dataset having 22 columns, it is necessary to narrow these down into significant columns for analysis. The project will use the company's fulfillment performance as the main subject of the audit, as this is one of the essential KPIs of logistics. Furthermore, the dataset has three (3) booking classifications: Spot, Contract, and Dedicated, though not explicitly mentioned, there should be a degree of difference between these three (3) different classes especially when it comes to fulfillment performance as Spot bookings are generally less prioritized compared to the other two (2).
 
 <h3>General View</h3>
@@ -49,10 +50,10 @@ There are no null values present across all the 170,820 rows in 22 columns. The 
 <h3>Column Significance</h3>
 
 To identify the columns that are significant to fulfillment performance, the Chi-Square test will be used, as the main metric that will be measured is if the order was fulfilled on-time or late which are categorical variables, not the severity of late. Upon conducting the test, the columns that impact (p-value <= 0.05) the fulfillment performance were: 
-- Event Type				- if the fulfillment is handled through client pick up or delivery
-- Scheduled Date			- the expected date when client should receive the order
-- Detention Minutes			- the facility-level delay experienced by the truck drivers
-- Location City & Location State	- location of the destination
+<div>- Event Type				- if the fulfillment is handled through client pick up or delivery</div>
+<div>- Scheduled Date			- the expected date when client should receive the order</div>
+<div>- Detention Minutes			- the facility-level delay experienced by the truck drivers</div>
+<div>- Location City & Location State	- location of the destination</div>
 Surprisingly, Booking Type has a value close to one (1), indicating its insignificance in affecting fulfillment performance, which is a major red flag as prior figures have shown the disparity of revenue share that the booking types have.
 
 <div align="center">
@@ -86,13 +87,14 @@ The distribution of fulfillment performance could be as low as 46%vs54% up to 68
 
 <h2>Conclusions and Recommendations</h2>
 
-- Booking Type Insignificance: Booking Type does not affect fulfillment performance when it otherwise should, though ideally, all booking types should receive the same level of prioritization, it is not something that logistics companies can actively maintain or even want to actively maintain, but in practicality, the highest level of prioritization should be given to where the most revenue is coming from, in the case of this dataset, on the Dedicated bookings.
-- Operational Shortcomings: The majority of the fulfillment performance is 55%vs45%, exhibited across the metrics used to investigate. This is practically a hit or miss performance for a logistics company that has gone on for several years (2022-2024) uncorrected.
-- Controlled Level of Variance: The fulfillment performance can go as low as 46% on-time and as high as 68% on-time, considering that the standard fulfillment performance is 55% on-time, these outliers are not straying away from being realistic, additionally, the logistics company treats the Booking Types too similarly.
-- Lack of Real-World Hindrance: Seasons having no effect on logistics is possible but very rare. While it can be true that once a logistics company has optimized their process, seasons barely matter in their performance, the standard 55% on-time fulfillment rate is not a sign of an optimized process.
-- Synthetic Behavior: The abrupt shift of fulfillment performance saw when based on Scheduled Date - Hours of Day, does not seem like a spontaneous human behavior (which is usually exhibited by slow decline rather than sudden shift).
+<div>- Booking Type Insignificance: Booking Type does not affect fulfillment performance when it otherwise should, though ideally, all booking types should receive the same level of prioritization, it is not something that logistics companies can actively maintain or even want to actively maintain, but in practicality, the highest level of prioritization should be given to where the most revenue is coming from, in the case of this dataset, on the Dedicated bookings.</div>
+<div>- Operational Shortcomings: The majority of the fulfillment performance is 55%vs45%, exhibited across the metrics used to investigate. This is practically a hit or miss performance for a logistics company that has gone on for several years (2022-2024) uncorrected.</div>
+<div>- Controlled Level of Variance: The fulfillment performance can go as low as 46% on-time and as high as 68% on-time, considering that the standard fulfillment performance is 55% on-time, these outliers are not straying away from being realistic, additionally, the logistics company treats the Booking Types too similarly.</div>
+<div>- Lack of Real-World Hindrance: Seasons having no effect on logistics is possible but very rare. While it can be true that once a logistics company has optimized their process, seasons barely matter in their performance, the standard 55% on-time fulfillment rate is not a sign of an optimized process.</div>
+<div>- Synthetic Behavior: The abrupt shift of fulfillment performance saw when based on Scheduled Date - Hours of Day, does not seem like a spontaneous human behavior (which is usually exhibited by slow decline rather than sudden shift).</div>
 
-* The dataset is clean enough to be used right away with minimal cleaning needed thus is not helpful if going to be used for Data Cleaning practice.
-* The dataset can lead to many insights although not very conducive in developing or giving an overview on how actual logistics companies work.
-* The dataset can be used for practicing data manipulation techniques outside of data cleaning.
-* The dataset can be utilized in building predictive models, especially using the other sheets, however, it is important to note this dataset seems to have been generated synthetically, which could result to a model with high accuracy but unusable in real world logistics.
+<div>* The dataset is clean enough to be used right away with minimal cleaning needed thus is not helpful if going to be used for Data Cleaning practice.</div>
+<div>* The dataset can lead to many insights although not very conducive in developing or giving an overview on how actual logistics companies work.</div>
+<div>* The dataset can be used for practicing data manipulation techniques outside of data cleaning.</div>
+<div>* The dataset can be utilized in building predictive models, especially using the other sheets, however, it is important to note this dataset seems to have been generated synthetically, which could result to a model with high accuracy but unusable in real world logistics.</div>
+</p>
