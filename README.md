@@ -93,8 +93,13 @@ The distribution of fulfillment performance could be as low as 46%vs54% up to 68
 <li><b>Lack of Real-World Hindrance:</b>  Seasons having no effect on logistics is possible but very rare. While it can be true that once a logistics company has optimized their process, seasons barely matter in their performance, the standard 55% on-time fulfillment rate is not a sign of an optimized process.</li>
 <li><b>Synthetic Behavior:</b>  The abrupt shift of fulfillment performance saw when based on Scheduled Date - Hours of Day, does not seem like a spontaneous human behavior (which is usually exhibited by slow decline rather than sudden shift).</li>
 </ul>
-<div>* The dataset is clean enough to be used right away with minimal cleaning needed thus is not helpful if going to be used for Data Cleaning practice.</div>
-<div>* The dataset can lead to many insights although not very conducive in developing or giving an overview on how actual logistics companies work.</div>
-<div>* The dataset can be used for practicing data manipulation techniques outside of data cleaning.</div>
-<div>* The dataset can be utilized in building predictive models, especially using the other sheets, however, it is important to note this dataset seems to have been generated synthetically, which could result to a model with high accuracy but unusable in real world logistics.</div>
+
+
+<ul>
+<li>The dataset is clean enough to be used right away with minimal cleaning needed thus is not helpful if going to be used for Data Cleaning practice.</li>
+<li>The dataset can lead to many insights although not very conducive in developing or giving an overview on how actual logistics companies work.</li>
+<li>The dataset can be used for practicing data manipulation techniques outside of data cleaning.</li>
+<li>The dataset can be utilized in building predictive models, especially using the other sheets, however, it is important to note this dataset seems to have been generated synthetically, which could result to a model with high accuracy but unusable in real world logistics.</li>
+</ul>
 </p>
+</div>
