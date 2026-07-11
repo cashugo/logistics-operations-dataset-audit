@@ -86,13 +86,13 @@ The distribution of fulfillment performance could be as low as 46%vs54% up to 68
 
 
 <h2>Conclusions and Recommendations</h2>
-
-<div>- Booking Type Insignificance: Booking Type does not affect fulfillment performance when it otherwise should, though ideally, all booking types should receive the same level of prioritization, it is not something that logistics companies can actively maintain or even want to actively maintain, but in practicality, the highest level of prioritization should be given to where the most revenue is coming from, in the case of this dataset, on the Dedicated bookings.</div>
-<div>- Operational Shortcomings: The majority of the fulfillment performance is 55%vs45%, exhibited across the metrics used to investigate. This is practically a hit or miss performance for a logistics company that has gone on for several years (2022-2024) uncorrected.</div>
-<div>- Controlled Level of Variance: The fulfillment performance can go as low as 46% on-time and as high as 68% on-time, considering that the standard fulfillment performance is 55% on-time, these outliers are not straying away from being realistic, additionally, the logistics company treats the Booking Types too similarly.</div>
-<div>- Lack of Real-World Hindrance: Seasons having no effect on logistics is possible but very rare. While it can be true that once a logistics company has optimized their process, seasons barely matter in their performance, the standard 55% on-time fulfillment rate is not a sign of an optimized process.</div>
-<div>- Synthetic Behavior: The abrupt shift of fulfillment performance saw when based on Scheduled Date - Hours of Day, does not seem like a spontaneous human behavior (which is usually exhibited by slow decline rather than sudden shift).</div>
-
+<ul>
+<li><b>Booking Type Insignificance:</b> Booking Type does not affect fulfillment performance when it otherwise should, though ideally, all booking types should receive the same level of prioritization, it is not something that logistics companies can actively maintain or even want to actively maintain, but in practicality, the highest level of prioritization should be given to where the most revenue is coming from, in the case of this dataset, on the Dedicated bookings.</li>
+<li><b>Operational Shortcomings:</b> The majority of the fulfillment performance is 55%vs45%, exhibited across the metrics used to investigate. This is practically a hit or miss performance for a logistics company that has gone on for several years (2022-2024) uncorrected.</li>
+<li><b>Controlled Level of Variance:</b>  The fulfillment performance can go as low as 46% on-time and as high as 68% on-time, considering that the standard fulfillment performance is 55% on-time, these outliers are not straying away from being realistic, additionally, the logistics company treats the Booking Types too similarly.</li>
+<li><b>Lack of Real-World Hindrance:</b>  Seasons having no effect on logistics is possible but very rare. While it can be true that once a logistics company has optimized their process, seasons barely matter in their performance, the standard 55% on-time fulfillment rate is not a sign of an optimized process.</li>
+<li><b>Synthetic Behavior:</b>  The abrupt shift of fulfillment performance saw when based on Scheduled Date - Hours of Day, does not seem like a spontaneous human behavior (which is usually exhibited by slow decline rather than sudden shift).</li>
+</ul>
 <div>* The dataset is clean enough to be used right away with minimal cleaning needed thus is not helpful if going to be used for Data Cleaning practice.</div>
 <div>* The dataset can lead to many insights although not very conducive in developing or giving an overview on how actual logistics companies work.</div>
 <div>* The dataset can be used for practicing data manipulation techniques outside of data cleaning.</div>
