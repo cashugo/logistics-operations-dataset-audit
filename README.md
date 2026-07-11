@@ -1,9 +1,8 @@
 <div align="center">
   <h1>Kaggle Dataset Realism and Value to Data Analysis Audit</h1>
 </div>
-
+<div align="justify">
 <h2>Background</h2>
-<p align="justify">
 Kaggle is the usual go-to repository of aspiring and practicing data professionals where they can browse and download datasets to be used to learn and hone their skills. The main problem with many datasets that are accessible is that the data is mostly artificially generated and can be a poor imitation of the data that is being handled in the corporate environment. Although a sample dataset should not be used as an exact basis for the real world data, it should be realistic to be of better help to those who are planning to use said dataset for data analysis. The main problem that aspiring data analysts on Kaggle face are the overly synthetic and sanitized datasets that are not only generic when it comes to insights you can get, some are also unrealistic. 
 
 The title of the dataset from Kaggle that will be used is "Logistics Operations Database" (https://www.kaggle.com/datasets/yogape/logistics-operations-database) where the author claimed that, 
@@ -11,17 +10,17 @@ The title of the dataset from Kaggle that will be used is "Logistics Operations 
 "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns."
 
 The dataset contains several sheets but the project will utilize two (sheets) that contain details regarding the subject company's performance: delivery events and truck load. The project will not focus on the in-depth analysis of the dataset, rather an investigation of the author's claim regarding how the dataset can fill the gap of unrealistic data that is exhibited by most Kaggle datasets.  
-</p>
+
 <h2>Executive Summary</h2>
 
 <div align="center">
   <img src="Figure_1.png" alt="Company's Fulfillment Performance per Booking Type">
 </div>
-<p align="justify">
+
 The project is aimed to verify the dataset's author's claim regarding: "Most logistics datasets are either proprietary (unavailable) or overly simplified (unrealistic). This fills the gap: operational complexity without confidentiality concerns.", and assess the value it can provide for data analysis. 
-</p>
+
 <h3>Primary Insights:</h3>
-<p align="justify">
+
 <div> - The dataset contains an even data, the fulfillment performance regardless of the dimensions (columns) used and booking type is generally just about 55% on-time and 45% late which implies a flaw on the operational baseline.</div>
 <div> - The dataset lacks real-world nuance and, dimensions such as Booking Types, Scheduled Date - Month of Year, etc. are found to be insignificant in affecting the fulfillment performance when in reality, these two (2) are some of the main drivers. Furthermore, the dataset exhibits seemingly perfect, clean and too controlled data, additionally, the abrupt shift in the fulfillment performance was found when investigating the Scheduled Date - Hours of Day does not appear to be a reflection of real human behavior.</div>
 <div> - Overall, the data is more on the unrealistic side and is falling short on achieving the promise of its author regarding filling the gap about operational complexity.</div>
@@ -30,9 +29,9 @@ The project is aimed to verify the dataset's author's claim regarding: "Most log
 <div> - Use this dataset if the objective is to practice data manipulation with data cleaning as the only exception.</div>
 <div> - Avoid using a dataset like this if the goal is to catch a glimpse of how logistics work in real-world.</div>
 <div> - Approach with caution when using the dataset for building predictive models as the data in synthetic and the resulting model might not be suitable for real-world application.</div>
-</p>
+
 <h2>Methodology</h2>
-<p align="justify">
+
 With the combined sheets from the dataset having 22 columns, it is necessary to narrow these down into significant columns for analysis. The project will use the company's fulfillment performance as the main subject of the audit, as this is one of the essential KPIs of logistics. Furthermore, the dataset has three (3) booking classifications: Spot, Contract, and Dedicated, though not explicitly mentioned, there should be a degree of difference between these three (3) different classes especially when it comes to fulfillment performance as Spot bookings are generally less prioritized compared to the other two (2).
 
 <h3>General View</h3>
@@ -101,5 +100,4 @@ The distribution of fulfillment performance could be as low as 46%vs54% up to 68
 <li>The dataset can be used for practicing data manipulation techniques outside of data cleaning.</li>
 <li>The dataset can be utilized in building predictive models, especially using the other sheets, however, it is important to note this dataset seems to have been generated synthetically, which could result to a model with high accuracy but unusable in real world logistics.</li>
 </ul>
-</p>
 </div>
