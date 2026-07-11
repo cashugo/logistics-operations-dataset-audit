@@ -32,7 +32,12 @@ The project is aimed to verify the dataset's author's claim regarding: "Most log
 
 <h2>Methodology</h2>
 
-With the combined sheets from the dataset having 22 columns, it is necessary to narrow these down into significant columns for analysis. The project will use the company's fulfillment performance as the main subject of the audit, as this is one of the essential KPIs of logistics. Furthermore, the dataset has three (3) booking classifications: Spot, Contract, and Dedicated, though not explicitly mentioned, there should be a degree of difference between these three (3) different classes especially when it comes to fulfillment performance as Spot bookings are generally less prioritized compared to the other two (2).
+With the combined sheets from the dataset having 22 columns, it is necessary to narrow these down into significant columns for analysis. The project will use the company's fulfillment performance as the main subject of the audit, as this is one of the essential KPIs of logistics. Furthermore, the dataset has three (3) booking classifications: Spot, Contract, and Dedicated, though not explicitly mentioned, there should be a degree of difference between these three (3) different classes especially when it comes to fulfillment performance as Spot bookings are generally less prioritized compared to the other two (2). The Python libraries that will be used are:
+
+<div> - Pandas will serve as the main tool for dataset manipulation.</div>
+<div> - NumPy will serve as a complimentary tool.</div>
+<div> - Matplotlib will be used for plotting essential data.</div>
+<div> - Scipy will be used for exploratory statistics.</div>
 
 <h3>General View</h3>
 
